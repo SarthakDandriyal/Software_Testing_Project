@@ -15,11 +15,23 @@ The authentication is a knowledge based authentication followed by an OTP based 
 
 ![Screenshot 2022-11-27 at 11 39 04 PM](https://user-images.githubusercontent.com/22930165/204152340-176f44f1-3b70-4583-a85a-66fb68649535.png)
 
-The login page expects the person to enter voterid and email.
+The login page expects the person to enter voterid(atleast 5 characters long)and email.
 
-Firstly a testcase was generated with "User1" as the username and "12345" as the password . This test could not pass the valid email constraint. 
+As the first test , we try we bypass the login page . Bypassing the loginpage takes us to a blockpage. Thus we cannot bypass the login page.
+![Screenshot 2022-11-28 at 1 29 58 AM](https://user-images.githubusercontent.com/22930165/204156978-b8345f88-776d-4439-88f1-0e3d73d02df1.png)
+
+A testcase was generated with "User1" as the voterid and "12345" as the email . This testcase could not pass the valid email constraint. 
 ![Screenshot 2022-11-28 at 12 20 52 AM](https://user-images.githubusercontent.com/22930165/204154064-08d98f83-ca10-49b8-97e4-b3462d50ba78.png)
 The prompt asks for a '@' in the email section .
 
-Secondly a testcase was generated with "User1" as the username and "12345@" as the password . This test could not pass the valid email constraint. 
+A testcase was generated with "User1" as the voterid and "12345@" as the email . This testcase could not pass the valid email constraint. 
 ![Screenshot 2022-11-28 at 12 25 57 AM](https://user-images.githubusercontent.com/22930165/204154290-f5a4d45e-4d7b-4bba-a84c-3d17154a1e5a.png)
+
+We create a testcase with "Usr1" as the voterid and "abc@def" as the email . This testcase could not pass the valid voterid constraint.
+![Screenshot 2022-11-28 at 1 19 33 AM](https://user-images.githubusercontent.com/22930165/204156641-51498820-d86b-45d0-b034-10757ff108a7.png)
+
+Next we generate 10 testcases randomly where the voterid is a randomly generated 5 digit combination of alphabets and the email is of the format XXX@XX . 
+These test cases are able to pass client side validation . These test cases fail on server side validation.
+![Screenshot 2022-11-28 at 12 54 55 AM](https://user-images.githubusercontent.com/22930165/204155845-df801829-6681-463d-af5c-597a5113818a.png)
+
+
