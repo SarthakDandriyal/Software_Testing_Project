@@ -49,6 +49,8 @@ Then the OTP functionality was tested by entering the ADMIN credentials . On ent
 
 Database Connectivity Testing
 
+The database connectivity was evaluated on two different browsers - Chrome and Edge.
+
 A. Election Registration Testing on Election Database
     
     • In this part we generated random election name ,time period and voters count for the election.
