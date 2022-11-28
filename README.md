@@ -46,3 +46,29 @@ Then the OTP functionality was tested by entering the ADMIN credentials . On ent
 ![Screenshot 2022-11-28 at 8 28 23 AM](https://user-images.githubusercontent.com/22930165/204182008-9c2851df-43c0-4323-9351-e99fc7a6d8ba.png)
 
 ![Screenshot 2022-11-28 at 8 28 47 AM](https://user-images.githubusercontent.com/22930165/204182062-1cc8b65c-43e0-4dc1-af2c-44e172a8b8d8.png)
+
+Database Connectivity Testing
+
+A. Election Registration Testing on Election Database
+    
+    • In this part we generated random election name ,time period and voters count for the election.
+    • Since none of  election name , time period and voters count is not our primary key therefore we are having duplicate values .
+    
+   ![image](https://user-images.githubusercontent.com/29448961/204195140-9b58e775-0c41-4440-803a-9df4d7e0f52a.png)
+
+B. Candidate Registration Testing on Candidate Database
+
+    • Generation for candidate names randomly and constructing a candidate Id array of length 10.
+    • The candidate Id array contains some duplicate values. 
+    • The system does not accept the duplicate “Ids” values as they are primary key for our Candidate database.
+    
+   ![image](https://user-images.githubusercontent.com/29448961/204195186-8dc7c517-92c8-4029-b2a4-7a952ce84202.png)
+
+C. Voter Registration Testing on Voters Database
+
+    • Similar to Candidate database , this database has voter Id as primary key ,so no accepting of  duplicate values 
+    • Generation of different voter data such as Name, Address,Email is done randomly. 
+    
+   ![image](https://user-images.githubusercontent.com/29448961/204195224-49d35b05-e5f9-42d9-8e03-d7c11f6830bd.png)
+
+    
